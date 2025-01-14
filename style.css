@@ -116,10 +116,11 @@ body {
   font-size: 1.5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   
   .cabecalho{
-    padding: 10%;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .cabecalho__menu{
@@ -132,6 +133,26 @@ body {
   }
 
   .apresentacao__conteudo{
-    width: auto;
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+  
+  .cabecalho{
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .cabecalho__menu{
+    justify-content: center;
+  }
+  
+  .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo{
+    width: 100%;
   }
 }
